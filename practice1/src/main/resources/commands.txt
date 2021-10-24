@@ -1,0 +1,5 @@
+DOWN=car.command.DownCommand
+UP=car.command.UpCommand
+LEFT=car.command.LeftCommand
+RIGHT=car.command.RightCommand
+CHANGECOLOR=car.command.ChangeColorCommand

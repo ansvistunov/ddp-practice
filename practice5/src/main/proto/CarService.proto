@@ -1,0 +1,47 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+package grpc.ex1;
+option java_multiple_files = true;
+option java_package = "grpc.carservice";
+option java_outer_classname = "CarServiceProto";
+enum Direction{
+    UP = 0;
+    DOWN = 1;
+    LEFT = 2;
+    RIGHT = 3;
+}
+
+message AddNewCarRequest{
+    string name = 1;
+    string color = 2;
+}
+
+message AddNewCarResponse{
+    int32 carIndex = 1;
+}
+
+message SetCarColorRequest{
+    int32 carIndex = 1;
+    string color = 2;
+}
+message MoveCarRequest{
+    int32 carIndex = 1;
+    Direction direction = 2;
+    int32 count = 3;
+}
+
+message MoveCarResponse{
+    bool result = 1;
+}
+
+message SetCarNameRequest{
+    int32 carIndex = 1;
+    string name = 2;
+}
+
+service CarService{
+    rpc createCar(AddNewCarRequest) returns (AddNewCarResponse);
+    rpc setCarColor(SetCarColorRequest) returns (google.protobuf.Empty);
+    rpc moveCar(MoveCarRequest) returns (MoveCarResponse);
+    rpc setCarName(SetCarNameRequest) returns (google.protobuf.Empty);
+}

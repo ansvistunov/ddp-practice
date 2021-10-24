@@ -6,3 +6,8 @@
 * practice5 - gRPC
 * practice6 - JMS
 * practice7 - Kafka
+
+Для проверки:
+cd test
+mvn clean install
+mvn exec:java -Dexec.mainClass=Main

@@ -1,7 +1,5 @@
 package kafka;
 
-import car.CarServer;
-import car.command.Command;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -18,7 +16,7 @@ import java.util.Arrays;
 import java.util.Properties;
 import java.util.Random;
 
-import static car.BasicCarServer.maxCarSecondsDonNotMove;
+//import static car.BasicCarServer.maxCarSecondsDonNotMove;
 
 /**
  * @author : Alex

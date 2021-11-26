@@ -35,9 +35,5 @@ public class Server extends BasicCarServer implements RemoteCarServer {
         Server server=new Server(fm,p);
         RemoteCarServer proxy=(RemoteCarServer) UnicastRemoteObject.exportObject(server,port);
         registry.rebind(name,proxy);
-        System.out.println("F***ing server started!!!");
-        System.out.println("C***y server started!!!");
-        System.out.println("This piece of s**t started!!!");
-        System.out.println("С*** сервер запустится!!!");
     }
 }

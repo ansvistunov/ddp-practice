@@ -15,7 +15,7 @@ public class Client {
 
     static final String host = "localhost";//"132.145.228.39";
     static final int port = 8080;
-    static final String name = "RMIServer";
+    static final String name = "RMICarServer";
 
     public static void main(String[] args) throws Exception {
         //1. Connect to name server;

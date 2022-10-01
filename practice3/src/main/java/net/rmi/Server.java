@@ -15,7 +15,7 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
 public class Server extends BasicCarServer implements RemoteCarServer {
-    public static String name="RMIServer";
+    public static String name="RMICarServer";
 
     public static final int port=8080;
     public Server(FieldMatrix fieldMatrix, CarEventsListener carEventsListener){

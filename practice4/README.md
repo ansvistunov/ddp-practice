@@ -1,2 +1,3 @@
-1. start Hello (webservice.server)
-2. mvn install (this command generate SOAP client)
++ start Hello (webservice.server)
++ mvn install (this command generate SOAP client)
++ mvn exec:java -Dexec.mainClass="soap.Hello"
